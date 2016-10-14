@@ -35,7 +35,7 @@ class TweetBox extends Component {
     const overflow = content.substring(limit);
 
     return (
-      <div className="alert alert-warning">
+      <div className="alert alert-warning zz-too-long">
         <strong>Oops! Too Long:</strong>
         &nbsp;...{before}
         <strong className="bg-danger">{overflow}</strong>
@@ -59,8 +59,8 @@ class TweetBox extends Component {
         <textarea className="form-control" onChange={this.handleContent}></textarea>
         <br/>
         <span>{count}</span>
-        <button className="btn btn-primary pull-right" disabled={disabled}>Tweet</button>
-        <button className="btn btn-default pull-right" onClick={this.handlePhoto}>{photoLabel}</button>
+        <button className="btn btn-primary pull-right zz-tweet" disabled={disabled}>Tweet</button>
+        <button className="btn btn-default pull-right zz-photo" onClick={this.handlePhoto}>{photoLabel}</button>
       </div>
     );
   }

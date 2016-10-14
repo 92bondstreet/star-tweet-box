@@ -4,6 +4,8 @@
   "private": true,
   "devDependencies": {
     "coveralls": "^2.11.14",
+    "enzyme": "^2.4.1",
+    "react-addons-test-utils": "^15.3.2",
     "react-scripts": "0.4.1"
   },
   "dependencies": {
